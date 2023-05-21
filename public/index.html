@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <title>Store Locator</title>
+</head>
+<style>
+  #marker {
+    background-image: url('./shops.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+   
+  .mapboxgl-popup {
+    max-width: 80px;
+    
+  }
+
+  .mapboxgl-popup-content {
+    font-weight: 700;
+  }
+  </style>
+<body>
+  <div class="container">
+    <h3 class="center"><i class="fa fa-map-pin m7"></i>STORE LOCATOR</h3>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card" style='width: 900px; height: 500px;'>
+            <div class="card-image">
+              <div id="map" style='width: 900px; height: 500px;'></div>
+              <a href="./add.html" class="btn-floating halfway-fab waves-effect waves-light red"><i class="fa fa-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/mapbox.js"></script>
+</body>
+</html>
